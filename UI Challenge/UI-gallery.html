@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="thumbnails">
+      <div class="thumbnail" data-full="images/fennec-fox.png">
+        <img src="images/fennec fox.png" alt="Fennec Fox">
+      </div>
+      <div class="thumbnail" data-full="images/humpback-whale.png">
+        <img src="images/humpback-whale.png" alt="Humpback Whale">
+      </div>
+      <div class="thumbnail" data-full="images/common-brown-baboon.png">
+        <img src="images/common-brown-baboon.png" alt="Common Brown Baboon">
+      </div>
+      <div class="thumbnail" data-full="Image/spotted-deer.png">
+        <img src="images/spotted-deer.png" alt="Spotted Deer">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full-size image viewing -->
+  <div class="modal" id="modal">
+    <span class="close">&times;</span>
+    <img src=""  class="modal-content" id="full-image" alt="">
+    <div class="caption" id="caption"></div>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

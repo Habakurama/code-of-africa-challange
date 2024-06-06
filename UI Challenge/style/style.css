@@ -1,0 +1,94 @@
+/* Reset some basic elements for consistency across browsers */
+body, h1, h2, h3, p, div, img, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Gallery container styling */
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumbnail {
+  flex: 1 1 calc(25% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: 10% auto;
+  max-width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.caption {
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .thumbnail {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .thumbnail {
+    flex: 1 1 100%;
+  }
+}
