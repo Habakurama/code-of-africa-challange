@@ -1,0 +1,92 @@
+body{
+  background-color: rgb(0, 0, 0);
+}
+.full_containter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.page1_contant{
+  display: inline-block;
+  padding: 70px ;
+  gap: 10px;
+  border-radius: 40px;
+  opacity: 0px;
+  background: rgba(178, 34, 34, 1);
+  color:  rgba(255, 255, 255, 1);
+  align-items: center;
+  
+}
+.page1_contant:hover{
+  border-style: solid;
+  border-color: rgb(44, 51, 95);
+  border-radius: 4px;
+}
+.text_decolation:hover{
+  text-decoration: underline;
+  color: rgb(61, 5, 184);
+}
+.palagraph{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 50px;
+  margin-bottom:0px;
+  color: grey;
+}
+.palagraph:hover{
+  display:block;
+  color: rgb(61, 5, 184);
+  
+}
+#palagraph-text p {
+  text-align: left;
+}
+
+.images_container, .images_container03{
+  opacity: 0px;
+  display:inline-block;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  margin-bottom: 50px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: center;
+  
+}
+
+.imageinfo{
+  display: inline-block;
+  object-fit: contain;
+  width: 120px;
+  position: relative;
+
+}
+.imageinfo img{
+  margin: 0px;
+}
+.imageinfo:hover{
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(25, 25, 79);
+  
+}
+.imageinfo03:hover{
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(25, 25, 79);
+  
+}
+.imageinfo03{
+  display: inline-block;
+  object-fit: contain;
+  width: 80px;
+  gap: 0;
+  margin-bottom: 300px;
+
+}
